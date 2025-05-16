@@ -1,0 +1,122 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+  position: fixed;
+  inset: 0;
+  z-index: -1; /* behind everything */
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+/* Content styling to make it visible on top */
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: black;  /* Change to black */
+  color: white;             /* Change font to white */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* About Me Section */
+#about-me {
+  background: rgba(0, 0, 0, 0.8); /* black background */
+  color: white; /* white text */
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Hobbies Section */
+#hobbies {
+  background: rgba(0, 0, 0, 0.8); /* black background */
+  color: white; /* white text */
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+#hobbies ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+#hobbies li {
+  padding: 5px 0;
+  font-size: 1.1em;
+  color: white; /* white text for list items */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: white; /* white text */
+  background: rgba(0, 0, 0, 0.8); /* black background */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Rain Background Animation by kish_3691 */
+.container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: #cae9f1;
+  background-image:
+    radial-gradient(4px 100px at 0px 235px, #272257, #0000),
+    radial-gradient(4px 100px at 300px 235px, #272257, #0000),
+    radial-gradient(1.5px 1.5px at 150px 117.5px, #272257 100%, #0000 150%);
+  background-size: 300px 235px;
+  animation: rainmove 20s linear infinite;
+}
+
+@keyframes rainmove {
+  0% {
+    background-position: 0px 0px, 300px 0px, 150px 0px;
+  }
+  100% {
+    background-position: 0px 2000px, 300px 2000px, 150px 2000px;
+  }
+}
+header {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
